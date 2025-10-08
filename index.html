@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
-      rel="stylesheet"
-    />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <title>Tunja Manualidades</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <!--
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--
 
 TemplateMo 546 Sixteen Clothing
 
@@ -26,43 +22,90 @@ https://templatemo.com/tm-546-sixteen-clothing
 -->
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <!-- Lightbox styles -->
+    <style>
+      /* Overlay that will show the enlarged image/card */
+      .lightbox-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2000; /* high so it sits above other components */
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .lightbox-content {
+        max-width: 95%;
+        max-height: 95%;
+        overflow: auto;
+        border-radius: 6px;
+      }
+
+      .lightbox-content img {
+        display: block;
+        max-width: 100%;
+        max-height: 80vh;
+        width: auto;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      }
+
+      /* Option to enlarge the whole card instead of only the image */
+      .lightbox-card {
+        background: #fff;
+        padding: 18px;
+        border-radius: 6px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        max-width: 900px;
+        width: 100%;
+      }
+
+      /* Close button */
+      .lightbox-close {
+        position: absolute;
+        top: 18px;
+        right: 22px;
+        color: #fff;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 2010;
+      }
+    </style>
+
   </head>
 
   <body>
+
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
-      <div class="jumper">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
     <!-- ***** Preloader End ***** -->
 
-    <!-- Header -->
-    <header class="">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><h2>TUNJA <em>Manualidades</em></h2></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-     
+    <!-- Header (simplificado porque no hay más páginas) -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center py-3">
+            <a class="navbar-brand" href="index.html" style="text-decoration: none; color: inherit;"><h2>TUNJA <em>Manualidades</em></h2></a>
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
 
     <!-- Page Content -->
@@ -94,12 +137,19 @@ https://templatemo.com/tm-546-sixteen-clothing
     <div class="latest-products">
       <div class="container">
         <div class="row">
-          <div class="col-md-12"></div>
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Ultimos agregados</h2>
+              <span class="text-muted">Ver todos los productos <i class="fa fa-angle-right"></i></span>
+            </div>
+          </div>
+          <!-- Generadas automáticamente: una tarjeta por imagen en assets/images -->
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/hongo.png" alt="" /></a>
+              <a href="#"><img src="assets/images/bandeja.png" alt="Bandeja"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Bandeja</h4></a>
+                <p>Bandeja decorativa hecha a mano, ideal para regalar o decorar tu hogar.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -107,15 +157,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (12)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/noelfrente.png" alt="" /></a>
-              <div class="down-content img-fluid">
-                <a href="#"><h4>Papa Noel navideño</h4></a>
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+              <a href="#"><img src="assets/images/bolso-rosado-arriba.png" alt="Bolso rosado"></a>
+              <div class="down-content">
+                <a href="#"><h4>Bolso rosado</h4></a>
+                <p>Bolso artesanal en tonos rosados, ideal para eventos y uso diario.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -123,14 +174,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (8)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/sentado.png" alt="" /></a>
+              <a href="#"><img src="assets/images/caja.png" alt="Caja"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Caja</h4></a>
+                <p>Caja decorativa para recuerdos o dulces, personalizada a pedido.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -138,14 +191,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (5)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/campana.png" alt="" /></a>
+              <a href="#"><img src="assets/images/caja2.png" alt="Caja 2"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Caja pequeña</h4></a>
+                <p>Pequeña caja ideal para detalles y recuerdos.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -153,14 +208,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (3)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/chimenea.png" alt="" /></a>
+              <a href="#"><img src="assets/images/cajadulce.png" alt="Caja de dulce"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Caja de dulce</h4></a>
+                <p>Caja temática para dulces y detalles, perfecta para fiestas.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -168,16 +225,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (9)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"
-                ><img src="assets/images/bg/nievebanco.png" alt=""
-              /></a>
+              <a href="#"><img src="assets/images/Camellolado.png" alt="Camello lavado"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Camello decorado</h4></a>
+                <p>Figura decorativa con detalles pintados a mano.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -185,14 +242,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (7)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/nievecabeza.png" alt="" /></a>
+              <a href="#"><img src="assets/images/carreta.png" alt="Carreta"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Carreta</h4></a>
+                <p>Mini carreta artesanal, ideal para decoración rústica.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -200,14 +259,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (4)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/nievecabeza1.png" alt="" /></a>
+              <a href="#"><img src="assets/images/cofre.png" alt="Cofre"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Cofre</h4></a>
+                <p>Cofre pequeño para joyería o recuerdos, con acabado artesanal.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -215,14 +276,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (6)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/nievecruzado.png" alt="" /></a>
+              <a href="#"><img src="assets/images/cursos.jpg" alt="Cursos"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Cursos</h4></a>
+                <p>Ofrecemos cursos de diferentes técnicas de manualidades.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -230,14 +293,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (18)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/nieves.png" alt="" /></a>
+              <a href="#"><img src="assets/images/Dulcefrente.png" alt="Dulce frente"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Dulce</h4></a>
+                <p>Detalle temático para dulces y recuerdos decorados.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -245,14 +310,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (2)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/nievetasa.png" alt="" /></a>
+              <a href="#"><img src="assets/images/fomy.png" alt="Foamy"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Foamy</h4></a>
+                <p>Trabajos en foamy: clases y piezas decorativas.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -260,14 +327,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (11)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/noel gris.png" alt="" /></a>
+              <a href="#"><img src="assets/images/galletablancalado.png" alt="Galleta blanca lado"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Galleta blanca</h4></a>
+                <p>Galleta decorada estilo artesanal para detalles y recuerdos.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -275,14 +344,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (6)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/noelarbol.png" alt="" /></a>
+              <a href="#"><img src="assets/images/galletacafefrente.png" alt="Galleta cafe frente"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Galleta café</h4></a>
+                <p>Galleta decorada con temática de café, ideal para eventos.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -290,14 +361,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (7)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/pared.png" alt="" /></a>
+              <a href="#"><img src="assets/images/Goldfrente.png" alt="Gold frente"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Gold</h4></a>
+                <p>Diseño en tonos dorados para decoración elegante.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -305,14 +378,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (10)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/puntalarga.png" alt="" /></a>
+              <a href="#"><img src="assets/images/\gris frnte.png" alt="Gris frente"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
+                <a href="#"><h4>Gris</h4></a>
+                <p>Producto en tonos grises con acabado liso y moderno.</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -320,51 +395,287 @@ https://templatemo.com/tm-546-sixteen-clothing
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
+                <span>Reviews (2)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/renocool.png" alt="" /></a>
+              <a href="#"><img src="assets/images/ind.png" alt="Ind"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
-                <ul class="stars">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                </ul>
+                <a href="#"><h4>Ind</h4></a>
+                <p>Producto decorativo con diseño 'ind'.</p>
+                <span>Reviews (4)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/rosa2.png" alt="" /></a>
+              <a href="#"><img src="assets/images/ind2.png" alt="Ind 2"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
-                <ul class="stars">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                </ul>
+                <a href="#"><h4>Ind 2</h4></a>
+                <p>Variante del diseño 'ind' en tonos suaves.</p>
+                <span>Reviews (3)</span>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="assets/images/bg/sincabeza.png" alt="" /></a>
+              <a href="#"><img src="assets/images/ind3.png" alt="Ind 3"></a>
               <div class="down-content">
-                <p>Fabricado en fliz, con relleno en algodón siliconado</p>
-                <ul class="stars">
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                  <li><i class="fa fa-star"></i></li>
-                </ul>
+                <a href="#"><h4>Ind 3</h4></a>
+                <p>Decoración tipo 'ind' con acabado artesanal.</p>
+                <span>Reviews (5)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/logotunja1.png" alt="Logo Tunja"></a>
+              <div class="down-content">
+                <a href="#"><h4>Logo Tunja</h4></a>
+                <p>Versión del logo para productos y materiales promocionales.</p>
+                <span>Reviews (1)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/man.png" alt="Man"></a>
+              <div class="down-content">
+                <a href="#"><h4>Figura "Man"</h4></a>
+                <p>Pieza decorativa con acabado pintado a mano.</p>
+                <span>Reviews (6)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/manu.jpg" alt="Manu"></a>
+              <div class="down-content">
+                <a href="#"><h4>Manu</h4></a>
+                <p>Imagen representativa de trabajos manuales y tutoriales.</p>
+                <span>Reviews (2)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/noelfrente.png" alt="Noel"></a>
+              <div class="down-content">
+                <a href="#"><h4>Noel</h4></a>
+                <p>Figura navideña pintada y decorada.</p>
+                <span>Reviews (14)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/papablancofrente.png" alt="Papa blanco"></a>
+              <div class="down-content">
+                <a href="#"><h4>Papá blanco</h4></a>
+                <p>Figura temática 'papá' con acabado liso y detalles en blanco.</p>
+                <span>Reviews (7)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/papafrente%20%282%29.png" alt="Papa frente"></a>
+              <div class="down-content">
+                <a href="#"><h4>Papá (2)</h4></a>
+                <p>Otra variante de la figura 'papá', con colores vibrantes.</p>
+                <span>Reviews (5)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/papaverderojofrente.png" alt="Papa verde rojo frente"></a>
+              <div class="down-content">
+                <a href="#"><h4>Papá verde/rojo</h4></a>
+                <p>Diseño en combinaciones verde y rojo, ideal para fiestas.</p>
+                <span>Reviews (9)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/Pareja1.png" alt="Pareja 1"></a>
+              <div class="down-content">
+                <a href="#"><h4>Pareja 1</h4></a>
+                <p>Composición de pareja en estilo romántico.</p>
+                <span>Reviews (11)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/Parejaatras.png" alt="Pareja atras"></a>
+              <div class="down-content">
+                <a href="#"><h4>Pareja (atrás)</h4></a>
+                <p>Versión trasera de la pareja decorativa.</p>
+                <span>Reviews (4)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/Parejalado.png" alt="Pareja lado"></a>
+              <div class="down-content">
+                <a href="#"><h4>Pareja (lado)</h4></a>
+                <p>Vista lateral de la pareja, buen detalle para regalo.</p>
+                <span>Reviews (3)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/portNieve.jpg" alt="Porta nieve"></a>
+              <div class="down-content">
+                <a href="#"><h4>Porta Nieve</h4></a>
+                <p>Porta con temática de nieve, ideal para decoración navideña.</p>
+                <span>Reviews (13)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/Renatras.png" alt="Ren atras"></a>
+              <div class="down-content">
+                <a href="#"><h4>Ren (atrás)</h4></a>
+                <p>Figura de reno vista desde atrás.</p>
+                <span>Reviews (2)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/Renfrente.png" alt="Ren frente"></a>
+              <div class="down-content">
+                <a href="#"><h4>Reno</h4></a>
+                <p>Reno decorativo con detalles pintados a mano.</p>
+                <span>Reviews (15)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/Renlado.png" alt="Ren lado"></a>
+              <div class="down-content">
+                <a href="#"><h4>Reno (lado)</h4></a>
+                <p>Vista lateral del reno decorativo.</p>
+                <span>Reviews (3)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/reno.jpeg" alt="Reno jpeg"></a>
+              <div class="down-content">
+                <a href="#"><h4>Reno JPEG</h4></a>
+                <p>Imagen en formato JPEG del reno decorativo.</p>
+                <span>Reviews (1)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/retro.jpg" alt="Retro"></a>
+              <div class="down-content">
+                <a href="#"><h4>Retro</h4></a>
+                <p>Estilo retro aplicado a piezas de manualidad.</p>
+                <span>Reviews (2)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/rojos%20espalda.png" alt="Rojos espalda"></a>
+              <div class="down-content">
+                <a href="#"><h4>Rojos (espalda)</h4></a>
+                <p>Diseño en tonos rojos, vista trasera.</p>
+                <span>Reviews (2)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/rojos%20frente.png" alt="Rojos frente"></a>
+              <div class="down-content">
+                <a href="#"><h4>Rojos (frente)</h4></a>
+                <p>Diseño en tonos rojos, vista frontal.</p>
+                <span>Reviews (8)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/sentado.png" alt="Sentado"></a>
+              <div class="down-content">
+                <a href="#"><h4>Sentado</h4></a>
+                <p>Figura en posición sentada con detalles pintados.</p>
+                <span>Reviews (6)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/tar.jpg" alt="Tar"></a>
+              <div class="down-content">
+                <a href="#"><h4>Tar</h4></a>
+                <p>Tarjeta decorada para ocasiones especiales.</p>
+                <span>Reviews (5)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/tar2.jpg" alt="Tar 2"></a>
+              <div class="down-content">
+                <a href="#"><h4>Tar 2</h4></a>
+                <p>Variante de tarjeta con diseño alternativo.</p>
+                <span>Reviews (2)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/tarv.png" alt="Tarv"></a>
+              <div class="down-content">
+                <a href="#"><h4>Tarv</h4></a>
+                <p>Accesorio o tarjeta vertical para eventos.</p>
+                <span>Reviews (3)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/Transfrente.png" alt="Trans frente"></a>
+              <div class="down-content">
+                <a href="#"><h4>Trans frente</h4></a>
+                <p>Diseño translúcido con acabado frontal.</p>
+                <span>Reviews (1)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/Translado.png" alt="Trans lado"></a>
+              <div class="down-content">
+                <a href="#"><h4>Trans lado</h4></a>
+                <p>Vista lateral del diseño translúcido.</p>
+                <span>Reviews (1)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="assets/images/virgen.png" alt="Virgen"></a>
+              <div class="down-content">
+                <a href="#"><h4>Virgen</h4></a>
+                <p>Imagen de la virgen resinada, pintada en acrílico.</p>
+                <span>Reviews (23)</span>
               </div>
             </div>
           </div>
@@ -383,44 +694,62 @@ https://templatemo.com/tm-546-sixteen-clothing
           <div class="col-md-6">
             <div class="left-content">
               <h4>Contáctenos</h4>
-              <p>
-                Somos un emprendimiento de la ciudad de tunja, manejamos
-                numerosos cursos, asi como gran cantidad de tecnicas para las
-                manualidades. <br />
-                Que trabajamos: Madera, Ceramica, Foamy, Pintura, Resina,
-                Tarjeteria, Muñecos navideños, Country y muchos mas...
+              <p>Somos un emprendimiento de la ciudad de tunja, manejamos numerosos cursos, asi como gran cantidad de tecnicas para las manualidades. <br>
+                Que trabajamos: Madera, Ceramica, Foamy, Pintura, Resina, Tarjeteria, Muñecos navideños, Country y muchos mas...
               </p>
-
-              <a
-                href="https://api.whatsapp.com/send?phone=573208687178"
-                class="filled-button"
-                >WhatsApp</a
-              >
+             
+              <a href="" class="filled-button">WhatsApp</a>
             </div>
           </div>
           <div class="col-md-6">
             <div class="right-image">
-              <img src="assets/images/bolso-rosado-arriba.png" alt="" />
+              <img src="assets/images/bolso-rosado-arriba.png" alt="">
             </div>
           </div>
         </div>
       </div>
     </div>
+
+
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <div class="row">
+                <div class="col-md-8">
+                  <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="filled-button">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright &copy; 2021 Nirgo soluciones</p>
+              <p>Copyright &copy; 2021 Nirgo soluciones           
+         
             </div>
           </div>
         </div>
       </div>
     </footer>
 
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
@@ -429,17 +758,119 @@ https://templatemo.com/tm-546-sixteen-clothing
     <script src="assets/js/isotope.js"></script>
     <script src="assets/js/accordions.js"></script>
 
-    <script language="text/Javascript">
+
+    <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t) {
-        //declaring the array outside of the
-        if (!cleared[t.id]) {
-          // function makes it static and global
-          cleared[t.id] = 1; // you could use true and false, but that's more typing
-          t.value = ""; // with more chance of typos
-          t.style.color = "#fff";
-        }
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
       }
     </script>
+
+    <!-- Lightbox script -->
+    <script>
+      (function(){
+        // utility to create overlay
+        function createOverlay() {
+          var overlay = document.createElement('div');
+          overlay.className = 'lightbox-overlay';
+          overlay.style.display = 'none';
+
+          var close = document.createElement('div');
+          close.className = 'lightbox-close';
+          close.innerHTML = '&times;';
+          overlay.appendChild(close);
+
+          var content = document.createElement('div');
+          content.className = 'lightbox-content';
+          overlay.appendChild(content);
+
+          document.body.appendChild(overlay);
+
+          // close handlers
+          close.addEventListener('click', function(){ overlay.style.display = 'none'; overlay.innerHTML=''; document.body.removeChild(overlay); });
+          overlay.addEventListener('click', function(e){ if(e.target === overlay) { overlay.style.display = 'none'; document.body.removeChild(overlay); } });
+
+          return { overlay: overlay, content: content };
+        }
+
+        // show image in overlay
+        function showImage(src, alt) {
+          var o = createOverlay();
+          var img = document.createElement('img');
+          img.src = src;
+          img.alt = alt || '';
+          o.content.appendChild(img);
+          o.overlay.style.display = 'flex';
+
+          // close on esc
+          function escHandler(e){ if(e.key === 'Escape') { o.overlay.style.display = 'none'; document.removeEventListener('keydown', escHandler); try{ document.body.removeChild(o.overlay);}catch(e){} } }
+          document.addEventListener('keydown', escHandler);
+        }
+
+        // show whole card
+        function showCard(cardNode) {
+          var o = createOverlay();
+          var cardWrap = document.createElement('div');
+          cardWrap.className = 'lightbox-card';
+          // clone the card content to avoid moving original
+          var clone = cardNode.cloneNode(true);
+          // remove links' default behavior inside cloned card
+          var anchors = clone.querySelectorAll('a');
+          anchors.forEach(function(a){ a.removeAttribute('href'); });
+          cardWrap.appendChild(clone);
+          o.content.appendChild(cardWrap);
+          o.overlay.style.display = 'flex';
+
+          function escHandler(e){ if(e.key === 'Escape') { o.overlay.style.display = 'none'; document.removeEventListener('keydown', escHandler); try{ document.body.removeChild(o.overlay);}catch(e){} } }
+          document.addEventListener('keydown', escHandler);
+        }
+
+        // Handler for clicks on product images
+        function onProductImageClick(e){
+          // ensure it's an img inside a product-item
+          var img = e.target;
+          if(img.tagName !== 'IMG') return;
+
+          // prevent default link behaviour and stop propagation to carousels
+          e.preventDefault();
+          e.stopPropagation();
+
+          // If you want to enlarge the whole card, find closest .product-item
+          var card = img.closest('.product-item');
+          if(card) {
+            // if you prefer image-only, use showImage(img.src)
+            // choose based on available space / layout
+            // showImage(img.src, img.alt);
+            showCard(card);
+            return;
+          }
+
+          // fallback: show the image alone
+          showImage(img.src, img.alt);
+        }
+
+        // attach event listeners when DOM is ready
+        function init(){
+          // delegate clicks inside the container that holds product-items
+          var container = document.querySelector('.latest-products') || document;
+          container.addEventListener('click', function(e){
+            // only react to images inside links to avoid disrupting other behaviors
+            var tgt = e.target;
+            if(tgt && tgt.tagName === 'IMG' && tgt.closest('.product-item')){
+              onProductImageClick(e);
+            }
+          }, true); // use capture to intercept before carousel handlers
+        }
+
+        if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+      })();
+    </script>
+
+
   </body>
+
 </html>
